@@ -4,7 +4,7 @@ const ProgressBar = () => {
     return (
         <Progress.Root defaultValue={9}>
             <HStack gap="4">
-                <Progress.Track h={3} bg="#454545" flex="1" borderRadius="full" overflow="visible">
+                <Progress.Track h={3} bg="brand.input" flex="1" borderRadius="full" overflow="visible">
                     <Progress.Range
                         borderRadius="full"
                         style={{
@@ -17,7 +17,7 @@ const ProgressBar = () => {
                     <Text as="span" color="white">
                         ۱
                     </Text>
-                    <Text as="span" color="#454545">
+                    <Text as="span" color="brand.input">
                         /۳
                     </Text>
                 </Progress.ValueText>

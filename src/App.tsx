@@ -4,7 +4,7 @@ import ProgressBar from "./components/ProgressBar";
 function App() {
     return (
         <Box
-            bg="gray.900"
+            bg="brand.background"
             color="white"
             minH="100vh"
             display="flex"
@@ -21,11 +21,11 @@ function App() {
                     </GridItem>
 
                     <GridItem bg="blue.500" p={20} borderRadius="md" textAlign="center">
-                        <Text>Header</Text>
+                        <Text fontWeight="bold">خوش اومدین</Text>
                     </GridItem>
 
                     <Grid templateColumns={{ base: "1fr", md: "1fr 1fr" }} gap={6} w="full">
-                        <GridItem bg="green.500" p={4} borderRadius="md">
+                        <GridItem bg="brand.cardbg" p={4} borderRadius="md">
                             <Text>Upload grid </Text>
                         </GridItem>
                         <GridItem bg="teal.500" p={4} borderRadius="md">
@@ -42,7 +42,7 @@ function App() {
                         </GridItem>
                     </Grid>
 
-                    <GridItem bg="pink.500" p={2} borderRadius="4xl" textAlign="center">
+                    <GridItem bg="brand.primary" p={2} borderRadius="4xl" textAlign="center">
                         <Text>Submit button</Text>
                     </GridItem>
                 </VStack>
