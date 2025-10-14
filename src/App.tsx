@@ -1,5 +1,6 @@
 import { Box, Grid, GridItem, VStack, Text } from "@chakra-ui/react";
 import ProgressBar from "./components/ProgressBar";
+import Banner from "./components/Banner";
 
 function App() {
     return (
@@ -10,8 +11,8 @@ function App() {
             display="flex"
             justifyContent="center"
             alignItems="center"
-            // px={{ base: 4, md: 8 }}
-            // py={{ base: 8, md: 12 }}
+            // px={{ base: 4, md: 20 }}
+            pt={{ base: 8, md: 20 }}
         >
             {/* Main container */}
             <Box w="full" maxW="80%">
@@ -20,8 +21,8 @@ function App() {
                         <ProgressBar></ProgressBar>
                     </GridItem>
 
-                    <GridItem bg="blue.500" p={20} borderRadius="md" textAlign="center">
-                        <Text fontWeight="bold">خوش اومدین</Text>
+                    <GridItem>
+                        <Banner></Banner>
                     </GridItem>
 
                     <Grid templateColumns={{ base: "1fr", md: "1fr 1fr" }} gap={6} w="full">
