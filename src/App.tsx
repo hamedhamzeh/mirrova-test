@@ -1,4 +1,5 @@
 import { Box, Grid, GridItem, VStack, Text } from "@chakra-ui/react";
+import ProgressBar from "./components/ProgressBar";
 
 function App() {
     return (
@@ -15,8 +16,8 @@ function App() {
             {/* Main container */}
             <Box w="full" maxW="80%">
                 <VStack gap={6} align="stretch">
-                    <GridItem bg="red.500" p={1} borderRadius="md">
-                        <Text>Progress bar</Text>
+                    <GridItem>
+                        <ProgressBar></ProgressBar>
                     </GridItem>
 
                     <GridItem bg="blue.500" p={20} borderRadius="md" textAlign="center">
