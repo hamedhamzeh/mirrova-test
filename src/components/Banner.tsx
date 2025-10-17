@@ -8,11 +8,11 @@ const Banner = () => {
                 background: "linear-gradient(90deg, #384E5C 0%, #3D7497 100%)"
             }}
             borderRadius="md"
-            height={370}
+            height={300}
             position="relative"
             dir="rtl"
         >
-            <Flex align="center" justify="flex-start" pt={14} flexDirection="column" gap={3} height="100%">
+            <Flex align="center" justify="flex-start" pt={10} flexDirection="column" gap={3} height="100%">
                 <Image src={welcomeIcon} alt="Decorative Star" boxSize="40px" />
                 <Text fontSize="2xl" fontWeight="bold">
                     خوش اومدین!

@@ -1,6 +1,7 @@
-import { Box, Grid, GridItem, VStack, Text } from "@chakra-ui/react";
+import { Box, Grid, GridItem, VStack, Text, Input, Center } from "@chakra-ui/react";
 import ProgressBar from "./components/ProgressBar";
 import Banner from "./components/Banner";
+import CardContainer from "./components/CardContainer";
 
 function App() {
     return (
@@ -18,30 +19,39 @@ function App() {
             <Box w="full" maxW="80%">
                 <VStack gap={6} align="stretch">
                     <GridItem>
-                        <ProgressBar></ProgressBar>
+                        <ProgressBar />
                     </GridItem>
 
                     <GridItem>
-                        <Banner></Banner>
+                        <Banner />
                     </GridItem>
 
-                    <Grid templateColumns={{ base: "1fr", md: "1fr 1fr" }} gap={6} w="full">
-                        <GridItem bg="brand.cardbg" p={4} borderRadius="md">
-                            <Text>Upload grid </Text>
-                        </GridItem>
-                        <GridItem bg="teal.500" p={4} borderRadius="md">
-                            <Text>Link grid </Text>
-                        </GridItem>
-                    </Grid>
-
-                    <Grid templateColumns={{ base: "1fr", md: "1fr 1fr" }} gap={6} w="full">
-                        <GridItem bg="orange.500" p={4} borderRadius="md">
-                            <Text>Model type selection</Text>
-                        </GridItem>
-                        <GridItem bg="purple.500" p={4} borderRadius="md">
-                            <Text>Clothing type selection</Text>
-                        </GridItem>
-                    </Grid>
+                    <Box alignItems="center" mt={{ base: -32, md: -32 }} mx={{ base: 6, md: 16 }} position="relative">
+                        {" "}
+                        {/* Lift up with negative margin */}
+                        <Grid templateColumns={{ base: "1fr", md: "1fr 1fr" }} gap={8} w="full">
+                            <GridItem>
+                                <CardContainer heading="۲. عکس مدل رو اینجا آپلود کنید.">
+                                    <Text> Lorem ipsum dolor sit amet.</Text>
+                                </CardContainer>
+                            </GridItem>
+                            <GridItem>
+                                <CardContainer heading="۱. لینک محصول از سایت جین‌وست رو اینجا paste کنید.">
+                                    <Text>Lorem ipsum dolor sit amet. </Text>
+                                </CardContainer>
+                            </GridItem>
+                            <GridItem>
+                                <CardContainer heading="۴. نوع تصویر لباس:">
+                                    <Text> Lorem ipsum dolor sit amet. </Text>
+                                </CardContainer>
+                            </GridItem>
+                            <GridItem>
+                                <CardContainer heading="۳. نوع مدل رو انتخاب کنید:">
+                                    <Text> Lorem ipsum dolor sit amet. </Text>
+                                </CardContainer>
+                            </GridItem>
+                        </Grid>
+                    </Box>
 
                     <GridItem bg="brand.primary" p={2} borderRadius="4xl" textAlign="center">
                         <Text>Submit button</Text>
