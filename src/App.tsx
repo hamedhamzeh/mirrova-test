@@ -4,6 +4,7 @@ import Banner from "./components/Banner";
 import CardContainer from "./components/CardContainer";
 import URLInput from "./components/URLInput";
 import ImgUpload from "./components/ImgUpload";
+import ModelTypeSelector from "./components/ModelTypeSelector";
 
 function App() {
     return (
@@ -47,7 +48,7 @@ function App() {
                             </GridItem>
                             <GridItem>
                                 <CardContainer heading="۳. نوع مدل رو انتخاب کنید:">
-                                    <Text> Lorem ipsum dolor sit amet. </Text>
+                                    <ModelTypeSelector />
                                 </CardContainer>
                             </GridItem>
                         </Grid>
