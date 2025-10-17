@@ -6,6 +6,7 @@ import URLInput from "./components/URLInput";
 import ImgUpload from "./components/ImgUpload";
 import ModelTypeSelector from "./components/ModelTypeSelector";
 import ClothingTypeSelector from "./components/ClothingTypeSelector";
+import CustomButton from "./components/CustomButton";
 
 function App() {
     return (
@@ -55,8 +56,8 @@ function App() {
                         </Grid>
                     </Box>
 
-                    <GridItem bg="brand.primary" p={2} borderRadius="4xl" textAlign="center">
-                        <Text>Submit button</Text>
+                    <GridItem mb={10} textAlign="center">
+                        <CustomButton label="دیدن نتیجه پرو" />
                     </GridItem>
                 </VStack>
             </Box>
