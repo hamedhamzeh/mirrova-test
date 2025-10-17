@@ -2,6 +2,8 @@ import { Box, Grid, GridItem, VStack, Text, Input, Center } from "@chakra-ui/rea
 import ProgressBar from "./components/ProgressBar";
 import Banner from "./components/Banner";
 import CardContainer from "./components/CardContainer";
+import URLInput from "./components/URLInput";
+import ImgUpload from "./components/ImgUpload";
 
 function App() {
     return (
@@ -27,17 +29,15 @@ function App() {
                     </GridItem>
 
                     <Box alignItems="center" mt={{ base: -32, md: -32 }} mx={{ base: 6, md: 16 }} position="relative">
-                        {" "}
-                        {/* Lift up with negative margin */}
                         <Grid templateColumns={{ base: "1fr", md: "1fr 1fr" }} gap={8} w="full">
                             <GridItem>
                                 <CardContainer heading="۲. عکس مدل رو اینجا آپلود کنید.">
-                                    <Text> Lorem ipsum dolor sit amet.</Text>
+                                    <ImgUpload />
                                 </CardContainer>
                             </GridItem>
                             <GridItem>
                                 <CardContainer heading="۱. لینک محصول از سایت جین‌وست رو اینجا paste کنید.">
-                                    <Text>Lorem ipsum dolor sit amet. </Text>
+                                    <URLInput />
                                 </CardContainer>
                             </GridItem>
                             <GridItem>

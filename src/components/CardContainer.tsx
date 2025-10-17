@@ -7,7 +7,7 @@ interface Props {
 
 const CardContainer = ({ heading, children }: Props) => {
     return (
-        <Box height={48} bg="brand.cardbg" borderRadius="lg" dir="rtl">
+        <Box height={48} bg="brand.cardbg" borderRadius="lg" dir="rtl" overflow="hidden">
             <Flex py={6} px={4} direction="column" height="100%">
                 <Text fontSize="lg" mb={1}>
                     {heading}
