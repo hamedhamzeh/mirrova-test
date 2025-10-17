@@ -19,9 +19,9 @@ const ModelTypeSelector = () => {
                 }
             }}
             dir="rtl"
-            justifyItems="start"
+            justifyItems="center"
             mt={5}
-            mr={12}
+            ml={8}
         >
             <SimpleGrid columns={2} gap={10}>
                 {items.map((item) => (

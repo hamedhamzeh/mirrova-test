@@ -5,6 +5,7 @@ import CardContainer from "./components/CardContainer";
 import URLInput from "./components/URLInput";
 import ImgUpload from "./components/ImgUpload";
 import ModelTypeSelector from "./components/ModelTypeSelector";
+import ClothingTypeSelector from "./components/ClothingTypeSelector";
 
 function App() {
     return (
@@ -43,7 +44,7 @@ function App() {
                             </GridItem>
                             <GridItem>
                                 <CardContainer heading="۴. نوع تصویر لباس:">
-                                    <Text> Lorem ipsum dolor sit amet. </Text>
+                                    <ClothingTypeSelector />
                                 </CardContainer>
                             </GridItem>
                             <GridItem>
