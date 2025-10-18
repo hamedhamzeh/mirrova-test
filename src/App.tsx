@@ -31,26 +31,26 @@ function App() {
                         <Banner />
                     </GridItem>
 
-                    <Box alignItems="center" mt={{ base: -32, md: -32 }} mx={{ base: 6, md: 16 }} position="relative">
-                        <Grid templateColumns={{ base: "1fr", md: "1fr 1fr" }} gap={8} w="full">
-                            <GridItem>
-                                <CardContainer heading="۲. عکس مدل رو اینجا آپلود کنید.">
-                                    <ImgUpload />
-                                </CardContainer>
-                            </GridItem>
+                    <Box alignItems="center" mt={{ base: -32, md: -32 }} mx={{ base: 6, md: 8 }} position="relative">
+                        <Grid templateColumns={{ base: "1fr", md: "1fr 1fr" }} gap={8} w="full" dir="rtl">
                             <GridItem>
                                 <CardContainer heading="۱. لینک محصول از سایت جین‌وست رو اینجا paste کنید.">
                                     <URLInput />
                                 </CardContainer>
                             </GridItem>
                             <GridItem>
-                                <CardContainer heading="۴. نوع تصویر لباس:">
-                                    <ClothingTypeSelector />
+                                <CardContainer heading="۲. عکس مدل رو اینجا آپلود کنید.">
+                                    <ImgUpload />
                                 </CardContainer>
                             </GridItem>
                             <GridItem>
                                 <CardContainer heading="۳. نوع مدل رو انتخاب کنید:">
                                     <ModelTypeSelector />
+                                </CardContainer>
+                            </GridItem>
+                            <GridItem>
+                                <CardContainer heading="۴. نوع تصویر لباس:">
+                                    <ClothingTypeSelector />
                                 </CardContainer>
                             </GridItem>
                         </Grid>

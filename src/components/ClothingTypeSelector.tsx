@@ -13,7 +13,7 @@ import shoes from "../assets/shoes.svg";
 import pants from "../assets/pants.svg";
 
 const ClothingTypeSelector = () => {
-    const [selected, setSelected] = useState<string>("manto");
+    const [selected, setSelected] = useState<string>("dourse");
 
     const clothingOptions = [
         { id: "dourse", label: "دورس", icon: dourse },
@@ -29,7 +29,7 @@ const ClothingTypeSelector = () => {
     ];
 
     return (
-        <SimpleGrid columns={{ base: 2, sm: 3, md: 5 }} gap={3} my={2} mx={6} justifyItems="center">
+        <SimpleGrid columns={{ base: 2, sm: 3, md: 3, lg: 5 }} gap={3} my={1} mx={6} justifyItems="center">
             {clothingOptions.map((option) => {
                 const isSelected = selected === option.id;
                 return (
@@ -45,20 +45,13 @@ const ClothingTypeSelector = () => {
                         h="full"
                         display="flex"
                         flexDir="column"
-                        justifyContent="center"
+                        justifyContent="space-between"
                         alignItems="center"
                         rounded="md"
                         gap={1}
                         transition="all 0.2s ease"
                     >
-                        <Image
-                            src={option.icon}
-                            alt={option.label}
-                            // mt={1}
-                            // boxSize="32px"
-                            // mb={2}
-                            // filter={isSelected ? "brightness(1)" : "brightness(0.8)"}
-                        />
+                        <Image src={option.icon} alt={option.label} mt={1} />
                         <Text fontSize="s" fontWeight="extralight">
                             {option.label}
                         </Text>

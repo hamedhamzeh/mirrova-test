@@ -25,7 +25,7 @@ const ModelTypeSelector = () => {
         >
             <SimpleGrid columns={2} gap={10}>
                 {items.map((item) => (
-                    <RadioGroup.Item key={item.value} value={item.value}>
+                    <RadioGroup.Item key={item.value} cursor="pointer" value={item.value}>
                         <RadioGroup.ItemHiddenInput />
                         <RadioGroup.ItemText>{item.label}</RadioGroup.ItemText>
                         <RadioGroup.ItemIndicator ml={1} boxSize={3} />
