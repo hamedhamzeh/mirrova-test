@@ -13,7 +13,7 @@ import shoes from "../assets/shoes.svg";
 import pants from "../assets/pants.svg";
 
 const ClothingTypeSelector = () => {
-    const [selected, setSelected] = useState<string>("mantoo");
+    const [selected, setSelected] = useState<string>("manto");
 
     const clothingOptions = [
         { id: "dourse", label: "دورس", icon: dourse },
